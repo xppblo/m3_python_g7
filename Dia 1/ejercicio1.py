@@ -20,3 +20,18 @@ print(num)
 
 # INTERPOLACION
 print(f"el numero es {num}")
+
+nombre = "Miquella"
+
+print(f"Tu nombre es {nombre} \n y tu edad es {num}")
+print("Tu nombre es "+nombre)
+
+# string.format
+print("Tu nombre es {} y tu edad es {}".format(nombre,num))
+
+# formato con %: %s para string %d para numeros
+print("Tu nombre es %s y tu eddad es %d" % (nombre, num))
+
+# Metodo con cadena
+apellido = "Del Lineaje Dorado"
+print(apellido.title())
