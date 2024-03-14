@@ -33,5 +33,40 @@ print("Tu nombre es {} y tu edad es {}".format(nombre,num))
 print("Tu nombre es %s y tu eddad es %d" % (nombre, num))
 
 # Metodo con cadena
-apellido = "Del Lineaje Dorado"
+apellido = "Del LineAje DoRAdo"
 print(apellido.title())
+print(nombre + " " + apellido.title())
+
+print(type(num)) #entrega el tipo de dato
+
+print("KaKARotO".upper()) # entrega todo en mayusculas KAKAROTO
+print("KaKARotO".lower()) # entrega todo el contenido en minusculas kakaroto
+
+print(", ".join(["a","b","c"])) # une elementos separados
+
+
+#Tipos de datos
+
+entero = 1
+decimal = 9.5
+cadena = "esto es una cadena"
+boleano = True
+
+print(type(entero)) # int <class 'int'>
+print(type(decimal)) # float <class 'float'>
+print(type(cadena)) # str <class 'str'>
+print(type(boleano)) # bolean <class 'bool'>
+
+#presición de datos
+promedio = (4+5+7)/3
+print(f"el promedio es {promedio}")
+print(f"resulta de la division {1/9:.4f}")
+print(f"resulta de la division {round(1/9,3)}")
+print(f"el promedio es {round(promedio,2)}")
+
+#ingreso de datos
+
+Nombre = input("Ingrese su nombre: \n")
+print(f"Tu nombre es : {nombre}")
+Edad = input("Ingrese su edad: \n")
+print(f"Tu edad es : {Edad}")
