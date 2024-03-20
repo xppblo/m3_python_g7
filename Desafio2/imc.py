@@ -13,13 +13,13 @@ else :
 
     if imc < 18.5 :
         print(f"Su IMC es {imc:.2f}, y la clasificación OMS es bajo peso")
-    elif imc <= 18.5 or imc < 25 :
+    elif imc >= 18.5 or imc < 25 :
         print(f"Su IMC es {imc:.2f}, y la clasificación OMS es Adecuado")
-    elif imc <= 25 or imc < 30 :
+    elif imc >= 25 or imc < 30 :
         print(f"Su IMC es {imc:.2f}, y la clasificación OMS es Sobrepeso")
-    elif imc <= 30 or imc < 35 :
+    elif imc >= 30 or imc < 35 :
         print(f"Su IMC es {imc:.2f}, y a clasificación OMS es Obesidad Grado I")
-    elif imc <= 35 or imc < 40 :
+    elif imc >= 35 or imc < 40 :
         print(f"Su IMC es {imc:.2f}, y la clasificación OMS es Obesidad Grado II")
     else:
         print(f"Su IMC es {imc:.2f}, y la clasificación OMS es Obesidad Grado III")
