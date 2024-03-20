@@ -11,8 +11,6 @@ else :
 
     imc = peso / (altura**2)
 
-    imc = 35
-
     if imc < 18.5 :
         print(f"Su IMC es {imc:.2f}, y la clasificación OMS es bajo peso")
     elif imc <= 18.5 or imc < 25 :
