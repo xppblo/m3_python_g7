@@ -23,7 +23,7 @@ i = int(sys.argv[1])
 
 for clave,valor in ventas.items() :
     if valor > i :
-        ventas_filtrado[clave] = valor
+        ventas_filtrado[clave] = valor #guarda la clave y el valor en el nuevo diccionario
 print(ventas_filtrado)
 
 ventas_filtrado2={clave:valor for clave,valor in ventas.items() if valor > i}
