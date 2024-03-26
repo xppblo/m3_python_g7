@@ -41,6 +41,8 @@ print(mascotas)
 mascotas = {
     'Blue' : {'nombre': 'Blue', 'raza': 'Agapornis', 'anillado': 'Si', 'peso': '0.9', 'altura': '0.15', 'edad': '3'}
 }
-}
+
+mascotas["Blue"]["nombre"] => "nombre" : "Blue"
+mascotas["Blue"].pop("nombre") -> Elimina nombre del diccionario de Blue
 """
     

@@ -66,3 +66,11 @@ notas2 = {
 notas2.update(notas) #{'Miquella': 7, 'Malenia': 5, 'Radhan': 6, 'Antonio': 5, 'Felipe': 6, 'Daniela': 5, 'Vicente': 1, 'Julio': 7} se adiciona notas a notas2
 print(notas2)
 #COLICONES : en caso de tener las mismas claves en los diccionarios al hacer update() se remplaza el antiguo valor por el que se esta agregando
+
+print(notas.items()) #dict_items([('Antonio', 5), ('Felipe', 6), ('Daniela', 5), ('Vicente', 1), ('Julio', 7)])
+#Accede a los datos como tuplas
+
+print(notas2.get('Miquella'))# get(clave) -> Retorna el valor asociado a la clave 
+#Al consultar por una clave no existente retornara por default None
+print(notas2.get('Santiago'))# None
+print(notas2.get('Santiago', "no existe"))# Se peude especificar el valor de salida al no existir la clave
