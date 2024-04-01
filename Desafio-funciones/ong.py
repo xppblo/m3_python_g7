@@ -14,4 +14,12 @@ def productoria(lista):
     for num in lista:
         resultado *= num
     return resultado
-    
+
+def calcular(**elementos):
+    for clave,valor in elementos.items():
+        if "fact" in clave:
+            print(f"El factorial de {valor} es {factorial(valor)}")
+        elif "prod" in clave:
+            print(f"La productoria de {valor} es {productoria(valor)}")
+            
+calcular(fact_1 = 5, prod_1=[4,6,7,4,3], fact_2=6)
