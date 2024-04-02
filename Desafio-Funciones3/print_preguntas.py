@@ -5,7 +5,7 @@ def print_pregunta(enunciado, alternativas):
     # Imprimir enunciado y alternativas
     ###############################################################
     # Imprimir enunciado
-    print(enunciado)
+    print(enunciado[0])
     print()
     
     # Definir las letras asociadas a las alternativas

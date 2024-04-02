@@ -16,13 +16,17 @@ def choose_q(dificultad):
     # usar opciones desde ambiente global
     global opciones
     # escoger una pregunta
-    n_elegido = random.choice(opciones[dificultad])
+    opciones_disponibles = opciones[dificultad]
+    
+    n_elegido = random.choice(list(opciones_disponibles))
     # eliminarla del ambiente global para no escogerla de nuevo
     opciones[dificultad].remove(n_elegido)
     
     # escoger enunciado y alternativas mezcladas
-    pregunta = preguntas[n_elegido]
-    alternativas = shuffle_alt(pregunta['alternativas'])
+    pregunta = preguntas["pregunta_"+str(n_elegido)]
+    alternativas = shuffle_alt(pregunta)
+    alternativas = pregunta['alternativas']
+    
     return pregunta['enunciado'], alternativas
 
 if __name__ == '__main__':

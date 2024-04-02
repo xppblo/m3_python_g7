@@ -33,10 +33,9 @@ opcion = validate(['0','1'],opcion)
 
 # 2. Definir el comportamiento de Salir
 if opcion == '0':
-    print()
-    time.sleep(2)
-    os.system(op_sys)
     print("Nos vemos pronto!")
+    time.sleep(2)
+    os.system(op_sys)    
     # finalizar programa
     exit()
 
@@ -46,16 +45,16 @@ while correcto and n_pregunta < 3*p_level:
     if n_pregunta == 0:
         p_level = input('¿Cuántas preguntas por nivel? (Máximo 3): ')
         # 3. Validar el número de preguntas por nivel
-        p_level = validate(['1','2', '3'],p_level)
+        p_level = int(p_level)
         
     if continuar == 'y':
         #contador de preguntas
         n_pregunta += 1
         # 4. Escoger el nivel de la pregunta
-        nivel = choose_level(n_pregunta,p_level)
+        nivel = choose_level(n_pregunta, p_level)
         print(f'Pregunta {n_pregunta}:')
         # 5. Escoger el enunciado y las alternativas de una pregunta según el nivel escogido
-        enunciado, alternativas = 
+        enunciado, alternativas = choose_q(nivel)
         #6. Imprimir el enunciado y sus alternativas en pantalla
         print_pregunta(enunciado,alternativas)
         
