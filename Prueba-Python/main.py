@@ -11,7 +11,7 @@ def aves_chile():
     
     html = html_template.substitute(body = aves_html)
     
-    with open('aves.html', 'w') as f:
+    with open('Prueba-Python/aves_chile.html', 'w', encoding="utf-8") as f:
         f.write(html)
 
 aves_chile()
